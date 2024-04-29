@@ -13,7 +13,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 $sellerID=$_SESSION["userName"];
 $info = "SELECT * FROM properties WHERE sellerID = ?";
 $stmt = $conn->prepare($info);
-$stmt->bind_param("i", $_SESSION["userName"]);
+$stmt->bind_param("s", $_SESSION["userName"]);
 $stmt->execute();
 $result = $stmt->get_result();
 ?>

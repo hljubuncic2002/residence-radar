@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel = "stylesheet" href="registration.css">
+    <script defer src = "./registration.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class = "container">
+    <div class="box form-box">
+        <header>Register</header><br>
+        <form action="connect.php" method="post" onsubmit="return validForm()">
+            <div class = "field input">
+                <label for="userType">Select User Type:</label>
+                <select id="userType" name="userType">
+                    <option value="buyer">Buyer</option>
+                    <option value="seller">Seller</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            <div class = "field input">
+                <label for = "FName">First Name</label>
+                <input type = "text" name="firstName" id="firstName">
+                <span style="color:red" id = "fname_error"></span>
+            </div>
+            <div class = "field input">
+                <label for = "LName">Last Name</label>
+                <input type = "text" name= "lastName" id="lastName" >
+                <span style="color:red" id = "lname_error"></span>
+
+            </div>
+            <div class = "field input">
+                <label for = "Email">Email</label>
+                <input type = "email" name="email" id="email" >
+                <span style="color:red" id = "email_error"></span>
+            </div>
+            <div class = "field input">
+                <label for = "Phone">Phone Number</label>
+                <input type = "text" name="phoneNumber" id="phoneNumber" >
+                <span style="color:red" id = "phone_error"></span>
+            </div>
+            <div class = "field input">
+                <label for = "UName">Username</label>
+                <input type = "text" name="userName" id="userName" >
+                <span style="color:red" id = "user_error"></span>
+            </div>
+            <div class = "field input">
+                <label for = "PWord">Password</label>
+                <input type = "password" name="password" id="password" ><br><br>
+                <span style="color:red" id = "pass_error"></span>
+            </div>
+            <div class = "field input">
+                <input type = "submit" class="btn" name="submit" value = "Sign Up!">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

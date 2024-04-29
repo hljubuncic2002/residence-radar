@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    top:0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .3s linear;
+
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 3000;
+    box-shadow: 0 .5rem 1rem rgba(20, 30, 18, 0.58);
+    background: rgba(154, 189, 141, 0.96);
+    height: 50px;
+}
+header .logo {
+
+    font-family:Cinzel;
+    font-weight: bolder;
+    color: ghostwhite;
+    font-size: x-large;
+    text-shadow: 0.3px 0.3px #3e3939;
+
+    padding: 0 1.0rem;
+}
+header .navbar1 a{
+    padding: 0 1.0rem;
+    text-shadow: 0.3px 0.3px #3e3939;
+    text-decoration: underline;
+    color: ghostwhite;
+    font-size: large;
+    font-family: Cinzel;
+}
+
+header .navbar2 a {
+    padding: 0 1.0rem;
+    text-shadow: 0.3px 0.3px #3e3939;
+    text-decoration: underline;
+    color: ghostwhite;
+    font-size: large;
+    font-family: Cinzel;
+}
+
+header .navbar1 a:hover {
+    color: rgba(29, 47, 25, 0.58);
+    cursor: pointer;
+}
+header .navbar2 a:hover {
+    color: rgba(29, 47, 25, 0.58);
+    cursor: pointer;
+}
+
+.wrapper {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+.wrapper img {
+    width: 600px;
+   height: 500px;
+    float:left;
+    padding-right: 40px;
+    border-radius: 20%;
+}
+.text-box h1{
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Playfair Display SC;
+    text-decoration: underline rgba(154, 189, 141, 0.96);
+}
+.text-box h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Playfair Display SC;
+}
+.text-box h3{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Playfair Display SC;
+}
+.text-box a{
+
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Playfair Display SC;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.heading{
+    text-align: center;
+    color: black;
+    background: rgba(154, 189, 141, 0.24);
+    height: 40px;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-family: Cinzel;
+    text-shadow: 0.3px 0.3px #3e3939;
+    box-shadow: 0 -0.5rem 1rem rgba(20, 30, 18, 0.58);
+
+}
+.content{
+    font-family: Playfair Display SC;
+
+}
+.heading span{
+    color: #396e4a;
+}
+.about{
+    text-align: center;
+    justify-content: center;
+    margin-left:30px;
+    margin-right:30px;
+    font-family: Playfair Display SC;
+}
+.reason1 h3{
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: underline rgba(154, 189, 141, 0.96);
+}
+.reason1 p{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.reason1 img {
+    width: 100px;
+    height: 100px;
+}
+.reason2 h3{
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: underline rgba(154, 189, 141, 0.96);
+}
+.reason2 p{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.reason2 img{
+    width:100px;
+    height:100px;
+}
+.reason3 h3{
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: underline rgba(154, 189, 141, 0.96);
+}
+.reason3 p{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.reason3 img{
+    width:100px;
+    height:100px;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-left:30px;
+    margin-right:30px;
+
+
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+}
+
+.footer .box-container .box h2{
+    font-family: "Playfair Display SC";
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 1rem 0;
+    text-decoration: underline rgba(154, 189, 141, 0.96);
+}
+.footer .box-container .box a{
+    display: block;
+    font-family: "Cinzel";
+    color:black;
+    font-weight: lighter;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+.footer .box-container .box a:hover{
+    color: #396e4a;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+body{
+    background: rgba(154, 189, 141, 0.24);
+    font-family:sans-serif;
+}
+
+.content {
+  width: 875px;
+  margin: auto;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+  justify-content: center;
+  box-shadow: 0px 20px 20px  rgba(0,0,0, 0.1);
+  background: ghostwhite;
+}
+
+.card img {
+  margin-left: 60px;
+  margin-top: 5px;
+}
+.details {
+  padding: 15px;
+  text-align: center;
+}
+
+.lastCardText {
+  text-align: center;
+  margin-top: 40%;
+  margin-left: 15%;
+  height: 140px;
+  width: 140px;
+  font-size: 64px;
+  color: black;
+  background-color: rgba(154, 189, 141, 0.24);
+  border-radius: 50%;
+
+}

@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
     $_SESSION['userName'] = $_POST["userName"];
     $input_user = $_POST["userName"];
     $input_pass = $_POST["password"];
-    $hashedPass = password_hash($input_pass, PASSWORD_DEFAULT);
 
     $stmt = $conn->prepare("SELECT id, userName, password, userType FROM registration WHERE userName = ?");
     $stmt->bind_param("s", $input_user);
@@ -21,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
         $row = $result->fetch_assoc();
         $stored_pass = $row["password"];
 
-        if ($stored_pass == $input_pass) {
+        if (password_verify($input_pass, $stored_pass)) {
             $_SESSION["loggedin"] = true;
             $_SESSION["userid"] = $row["id"];
             $_SESSION["username"] = $row["userName"];

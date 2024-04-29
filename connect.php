@@ -16,7 +16,7 @@ if($conn->connect_error){
     die('Connection Failed : '.$conn->connect_error);
 }else {
     $stmt = $conn->prepare("insert into registration (userType, firstName, lastName, email, phoneNumber, userName, password) VALUES (?,?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", $userType, $firstName, $lastName, $email, $phoneNumber, $userName, $password);
+    $stmt->bind_param("sssssss", $userType, $firstName, $lastName, $email, $phoneNumber, $userName, $passwordHash);
     $stmt->execute();
     $stmt->close();
     $conn->close();

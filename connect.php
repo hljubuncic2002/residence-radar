@@ -11,7 +11,7 @@ $password = $_POST['password'];
 $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
 //Database connection//
-$conn = new mysqli('localhost', '', '', 'residence radar');
+$conn = new mysqli('localhost', 'root', '', 'residence radar');
 if($conn->connect_error){
     die('Connection Failed : '.$conn->connect_error);
 }else {
